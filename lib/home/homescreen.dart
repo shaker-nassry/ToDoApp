@@ -3,6 +3,10 @@ import 'package:todolist/home/settings/settingstab.dart';
 import 'package:todolist/home/tasklist/add_task_bottom_sheet.dart';
 import 'package:todolist/home/tasklist/tasklisttab.dart';
 import 'package:todolist/mytheme.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:calendar_timeline/calendar_timeline.dart';
+
+
 
 class HomeScreen extends StatefulWidget {
 static const String routename = "Home Screen" ;
@@ -18,8 +22,14 @@ int selectedindex = 0 ;
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('To Do List' ,
-          style: Theme.of(context).textTheme.labelLarge ,),
+        title: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch ,
+          children: [
+            Text('To Do List' ,
+              textAlign: TextAlign.left,
+              style: Theme.of(context).textTheme.labelLarge ,),
+          ],
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         elevation: 0,
@@ -52,13 +62,13 @@ int selectedindex = 0 ;
                 icon: ImageIcon(
                     AssetImage ('assets/images/icon_list.png'),
                 ),
-              label: '' ,
+              label: AppLocalizations.of(context)!.tasks ,
             ) ,
             BottomNavigationBarItem(
                 icon: ImageIcon(
                   AssetImage ('assets/images/icon_settings.png'),
                 ),
-              label: '' ,
+              label: AppLocalizations.of(context)!.settings ,
             ),
           ],
         ),

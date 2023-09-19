@@ -1,0 +1,24 @@
+{
+"tasks" : "المهمات",
+"settings" : "الاعدادات",
+"addnewtask" : "اضافة مهمة جديدة",
+ "entertask" : "ادخل المهمة",
+ "entertaskdes" : "اكتب وصف المهمة",
+ "selectdat" : "اختر تاريخ",
+ "selecttime" : "اختر وقت",
+ "done" : "تم",
+ "language" : "اللغة",
+ "theme" : "المظهر",
+ "english" : "الانجليزية",
+ "arabic" : "العربية",
+ "dark" : "داكن",
+ "light" : "فاتح",
+ "edittask" : "تعديل المهمة",
+ "edittasktitle" : "تعديل عنوان المهمة",
+ "edittaskdes" : "تعديل وصف المهمة",
+ "savechanges" : "حفظ التغييرات ",
+ "tasktitle" : "عنوان المهمه" ,
+ "taskdes" : "وصف المهمة" ,
+ "tasktime" : "وقت المهمة"
+
+}

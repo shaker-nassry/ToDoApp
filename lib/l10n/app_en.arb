@@ -1,0 +1,25 @@
+{
+"tasks" : "Tasks",
+"settings" : "Settings",
+"addnewtask" : "Add new Task",
+ "entertask" : "Enter Task",
+ "entertaskdes" : "Enter Task Description",
+ "selectdat" : "Select Date",
+ "selecttime" : "Select Time",
+ "done" : "Done",
+ "delete" : "Delete",
+ "language" : "Language",
+ "theme" : "Theme",
+ "english" : "English",
+ "arabic" : "Arabic",
+ "dark" : "Dark",
+ "light" : "Light",
+ "edittask" : "Edit Task",
+ "edittasktitle" : "Edit Task Title",
+ "edittaskdes" : "Edit Task Description",
+ "savechanges" : "Save Changes",
+ "tasktitle" : "Task Title" ,
+ "taskdes" : "Task Description" ,
+ "tasktime" : "Task Time"
+
+}

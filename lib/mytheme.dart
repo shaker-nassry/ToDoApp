@@ -10,10 +10,66 @@ class MyTheme {
   static Color backgrounddark = Color(0xff101627);
 
 
+  static ThemeData lightmode = ThemeData(
+      primaryColor: primary,
+      scaffoldBackgroundColor: backgroundlight,
+      cardColor: whitecolor,
+      canvasColor: blackcolor,
+      appBarTheme: AppBarTheme(
+          backgroundColor: primary,
+          elevation: 0,
+          iconTheme: IconThemeData(color: blackcolor)),
+      bottomNavigationBarTheme: BottomNavigationBarThemeData(
+          selectedItemColor: primary,
+          unselectedItemColor: Colors.grey,
+          showUnselectedLabels: true,
+          selectedIconTheme: IconThemeData(
+            size: 30,
+          ) ,
+          backgroundColor: Colors.transparent,
+          elevation: 0
+
+      ),
+      textTheme: TextTheme(
+        labelLarge: TextStyle(
+            color: whitecolor,
+            fontSize: 22,
+            fontWeight: FontWeight.bold),
+        titleMedium: TextStyle(
+          fontSize: 18,
+          fontWeight: FontWeight.w600,
+          color: primary,
+        ),
+        labelMedium: TextStyle(
+            fontSize: 15,
+            fontWeight: FontWeight.w600,
+            color: blackcolor),
+        bodySmall: TextStyle(
+          fontSize: 12,
+          color: blackcolor,
+        ),
+        labelSmall: TextStyle(
+            fontSize: 15,
+            fontWeight: FontWeight.w600,
+            color: primary
+        ),
+        bodyLarge:  TextStyle(
+            fontSize: 18,
+            fontWeight: FontWeight.w600,
+            color: blackcolor
+        ),
+
+
+      )
+
+
+  );
+
   static ThemeData darkmode = ThemeData(
       primaryColor: primary,
       scaffoldBackgroundColor: backgrounddark,
       cardColor: blackcolor,
+      canvasColor: whitecolor,
       appBarTheme: AppBarTheme(
           backgroundColor: primary,
           elevation: 0,
@@ -55,57 +111,14 @@ class MyTheme {
             fontWeight: FontWeight.w600,
             color: primary
         ),
+        bodyLarge:  TextStyle(
+            fontSize: 18,
+            fontWeight: FontWeight.w600,
+            color: whitecolor
+        ),
 
 
       )
       );
 
-  static ThemeData lightmode = ThemeData(
-      primaryColor: primary,
-      scaffoldBackgroundColor: backgroundlight,
-      cardColor: whitecolor,
-      appBarTheme: AppBarTheme(
-          backgroundColor: primary,
-          elevation: 0,
-          iconTheme: IconThemeData(color: blackcolor)),
-      bottomNavigationBarTheme: BottomNavigationBarThemeData(
-          selectedItemColor: primary,
-          unselectedItemColor: Colors.grey,
-          showUnselectedLabels: true,
-          selectedIconTheme: IconThemeData(
-            size: 30,
-          ) ,
-      backgroundColor: Colors.transparent,
-        elevation: 0
-
-      ),
-      textTheme: TextTheme(
-          labelLarge: TextStyle(
-              color: whitecolor,
-              fontSize: 22,
-              fontWeight: FontWeight.bold),
-          titleMedium: TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.w600,
-            color: primary,
-          ),
-          labelMedium: TextStyle(
-              fontSize: 15,
-              fontWeight: FontWeight.w600,
-              color: blackcolor),
-          bodySmall: TextStyle(
-            fontSize: 12,
-            color: blackcolor,
-      ),
-         labelSmall: TextStyle(
-            fontSize: 15,
-            fontWeight: FontWeight.w600,
-            color: primary
-         ),
-
-
-      )
-
-
-  );
 }
